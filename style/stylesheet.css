@@ -1,6 +1,62 @@
 /* This is were all css styles are written which is linked to the HTML file */
 
+/* Use body as a default style for everything */
+body
+{
+    background-color: #d0e4fe;
+    padding: 0%;
+    font-family: Sans-serif;
+}
+
 #forum_body 
 {
-    color: red;
+    background-color: #66B3FF;
+    margin: 5% 10% 5% 10%;
+    padding: 2%;
+}
+
+#web_title
+{
+    font-size: 500%;
+    margin: 0%;
+}
+
+#web_subtitle
+{
+    font-size: 250%;
+    margin: 0%;
+}
+
+#header
+{
+    text-align: center;
+}
+
+#footer
+{
+    text-align: center;
+}
+
+#background_2
+{
+    background-color: #FFFFFF;
+    margin: 0% 10% 0% 10%;
+    padding: 0%;
+    height: 100%;
+}
+
+.catagory
+{
+    background-color: #3399FF;
+}
+
+.catagory_header
+{
+    background-color: #2288FF;
+}
+
+h1 
+{
+    color: black;
+    text-align: center;
 }
