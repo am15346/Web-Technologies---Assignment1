@@ -54,6 +54,9 @@ body
 {
     background-color: #3399FF;
     padding: 1%;
+    border-style: solid;
+    border-color: #0077CC;
+    border-width: 2px;
     
     /* Not supported by all browsers */
     border-radius: 10px;
