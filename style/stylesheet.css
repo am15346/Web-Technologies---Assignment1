@@ -17,9 +17,7 @@ body
 
 #forum_body 
 {
-    background-color: #66B3FF;
     margin: 5% 10% 5% 10%;
-    padding: 2%;
 }
 
 #web_title
@@ -56,6 +54,9 @@ body
 {
     background-color: #3399FF;
     padding: 1%;
+    
+    /* Not supported by all browsers */
+    border-radius: 10px;
 }
 
 .catagory_name
@@ -68,7 +69,7 @@ body
 {
     border-style: solid;
     border-color: #FFFFFF;
-    border-width: 2px;
+    border-width: 5px;
     background-color: #EEEEEE;
     padding: 0.25% 1% 0.25% 1%;
 }
