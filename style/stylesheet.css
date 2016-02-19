@@ -48,15 +48,23 @@ body
 .catagory
 {
     background-color: #3399FF;
+    padding: 1%;
 }
 
 .catagory_header
 {
-    background-color: #2288FF;
+    background-color: #EEEEEE;
+}
+
+.catagory_subtitle
+{
+    background-color: #EEEEEE;
 }
 
 h1 
 {
     color: black;
     text-align: center;
+    margin: 0%;
+    padding: 0%;
 }
