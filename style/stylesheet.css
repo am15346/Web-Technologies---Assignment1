@@ -2,17 +2,22 @@
 
 /* Use body as a default style for everything */
 body
-{
+{    
     background-color: #d0e4fe;
     padding: 0%;
     font-family: Sans-serif;
 }
 
+/* Used for putting a box around everything */
+/*
+{
+    border-style: solid;
+    border-width: 1px;
+}*/
+
 #forum_body 
 {
-    background-color: #66B3FF;
     margin: 5% 10% 5% 10%;
-    padding: 2%;
 }
 
 #web_title
@@ -49,22 +54,66 @@ body
 {
     background-color: #3399FF;
     padding: 1%;
+    border-style: solid;
+    border-color: #0077CC;
+    border-width: 2px;
+    
+    /* Not supported by all browsers */
+    border-radius: 10px;
 }
 
-.catagory_header
+.catagory_name
+{
+    color: #FFFFFF;
+    padding: 0.25%
+}
+
+.board
+{
+    border-style: solid;
+    border-color: #FFFFFF;
+    border-width: 5px;
+    background-color: #EEEEEE;
+    padding: 0.25% 1% 0.25% 1%;
+}
+
+.board_title
+{
+    background-color: #EEEEEE;
+    display: inline-block;
+    padding: 0% 1% 0% 1%;
+}
+
+.board_header
 {
     background-color: #EEEEEE;
 }
 
-.catagory_subtitle
+.board_subtitle
 {
     background-color: #EEEEEE;
+}
+
+.board_icon
+{
+    width: 4%;
+    display: inline-block;
 }
 
 h1 
 {
-    color: black;
-    text-align: center;
+    margin: 0%;
+    padding: 0%;
+}
+
+h2 
+{
+    margin: 0%;
+    padding: 0%;
+}
+
+h3 
+{
     margin: 0%;
     padding: 0%;
 }
