@@ -84,6 +84,31 @@ body
     padding: 0% 1% 0% 1%;
 }
 
+<<<<<<< HEAD
+=======
+.catagory_name
+{
+    color: #FFFFFF;
+    padding: 0.25%
+}
+
+.board
+{
+    border-style: solid;
+    border-color: #FFFFFF;
+    border-width: 2px;
+    background-color: #EEEEEE;
+    padding: 0.25% 1% 0.25% 1%;
+}
+
+.board_title
+{
+    background-color: #EEEEEE;
+    display: inline-block;
+    padding: 0% 1% 0% 1%;
+}
+
+>>>>>>> refs/remotes/origin/master
 .board_header
 {
     background-color: #EEEEEE;
