@@ -10,9 +10,11 @@
 /* Use body as a default style for everything */
 body
 {    
-    background-color: #d0e4fe;
-    padding: 0%;
-    font-family: Sans-serif;
+	background-image: url("../board_icons/clouds.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
 }
 
 /* Used for putting a box around everything */
