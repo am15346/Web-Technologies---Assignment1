@@ -3,8 +3,8 @@
 /* All custom fonts are declared here */
 @font-face 
 {
-    font-family: nice1;
-    src: url('../fonts/nice1.ttf') format('truetype');
+    font-family: bomb;
+    src: url('../fonts/bomb.ttf') format('truetype');
 }
 
 /* Use body as a default style for everything */
@@ -31,7 +31,7 @@ body
 
 #web_title
 {
-    font-family: nice1;
+    font-family: bomb;
     font-size: 300%;
     color: white;
     margin: 0%;
