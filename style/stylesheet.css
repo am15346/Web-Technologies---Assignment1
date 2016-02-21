@@ -1,11 +1,20 @@
 /* This is were all css styles are written which is linked to the HTML file */
 
+/* All custom fonts are declared here */
+@font-face 
+{
+    font-family: 'vinegar_stroke';
+    src: url('../Fonts/nice1.ttf') format('truetype');
+}
+
 /* Use body as a default style for everything */
 body
 {    
-    background-color: #d0e4fe;
-    padding: 0%;
-    font-family: Sans-serif;
+	background-image: url('../board_icons/bluesexy.gif');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
 }
 
 /* Used for putting a box around everything */
@@ -22,59 +31,60 @@ body
 
 #web_title
 {
-    font-size: 500%;
+    font-family: 'vinegar_stroke';
+    font-size: 300%;
+    color: white;
     margin: 0%;
+    word-spacing: 1px;
 }
 
 #web_subtitle
 {
-    font-size: 250%;
-    margin: 0%;
+    font-size: 100%;
+    color: white;
+    margin-top: -0.5%;
+    margin-left: 0%;
+
 }
 
 #header
 {
-    text-align: center;
+    text-align: left;
 }
 
 #footer
 {
     text-align: center;
+    color: white;
 }
 
 #background_2
 {
-    background-color: #FFFFFF;
+    background-color: transparent;
     margin: 0% 10% 0% 10%;
     padding: 0%;
-    height: 100%;
+    height: 50%;
 }
 
 .catagory
 {
-    background-color: #3399FF;
+    background-color: rgba(255,255,255,0.25);
     padding: 1%;
     border-style: solid;
-    border-color: #0077CC;
-    border-width: 2px;
-    
+    border-color: white;
+   
     /* Not supported by all browsers */
     border-radius: 10px;
-}
-
-.catagory_name
-{
-    color: #FFFFFF;
-    padding: 0.25%
 }
 
 .board
 {
     border-style: solid;
-    border-color: #FFFFFF;
+    border-color: white;
     border-width: 5px;
     background-color: #EEEEEE;
-    padding: 0.25% 1% 0.25% 1%;
+    padding: 0.15% 2% 0.25% 1%;
+
 }
 
 .board_title
@@ -122,20 +132,23 @@ body
     display: inline-block;
 }
 
-h1 
-{
-    margin: 0%;
-    padding: 0%;
-}
-
-h2 
-{
-    margin: 0%;
-    padding: 0%;
-}
-
 h3 
 {
+    color: white;
+    font-family: "Times New Roman", Times, serif;
     margin: 0%;
     padding: 0%;
 }
+
+h4 
+{
+    margin: 0%;
+    padding: 0%;
+}
+
+h5 
+{
+    margin: 0%;
+    padding: 0%;
+}
+
