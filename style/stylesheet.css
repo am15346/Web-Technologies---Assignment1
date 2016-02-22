@@ -3,7 +3,7 @@
 /* All custom fonts are declared here */
 @font-face 
 {
-    font-family: 'nice';
+    font-family: nice;
     src: url('../fonts/nice.ttf') format('truetype');
 }
 
@@ -32,7 +32,7 @@ body
 
 #web_title
 {
-    font-family: 'nice';
+    font-family: nice;
     font-size: 300%;
     color: white;
     margin: 0%;

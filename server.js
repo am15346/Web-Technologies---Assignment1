@@ -17,6 +17,7 @@ var ports = [8080, 8443];
 // The most common non-standard file extensions are excluded, with a message.
 var types = {
     '.html' : 'text/html, application/xhtml+xml',
+    '.ttf'  : '#Some text',
     '.css'  : 'text/css',
     '.js'   : 'application/javascript',
     '.png'  : 'image/png',
