@@ -4,7 +4,7 @@
 @font-face 
 {
     font-family: 'nice';
-    src: url('fonts/nice.ttf') format('truetype');
+    src: url('../fonts/nice.ttf') format('truetype');
 }
 
 /* Use body as a default style for everything */
