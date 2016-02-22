@@ -1,0 +1,9 @@
+diff a/style/stylesheet.css b/style/stylesheet.css	(rejected hunks)
+@@ -3,6 +3,7 @@
+ /* All custom fonts are declared here */
+ @font-face 
+ {
++    font-family: bomb;
+     src: url('../fonts/bomb.ttf') format('truetype');
+ }
+ 
