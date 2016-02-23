@@ -7,16 +7,6 @@
     src: url('../fonts/nice.ttf') format('truetype');
 }
 
-/* Use body as a default style for everything */
-body
-{    
-	background-image: url('../board_icons/clouds.jpg');
-	background-position: center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-}
-
 /* Used for putting a box around everything */
 /*
 {
@@ -32,7 +22,7 @@ body
 
 .web_title
 {
-    font-family: nice;
+    font-family: nice, sans-serif;
     font-size: 300%;
     color: white;
     margin: 0%;
@@ -41,10 +31,10 @@ body
 
 .web_subtitle
 {
-    font-size: 100%;
+    font-family: nice, sans-serif;
+    font-size: 155%;
     color: white;
-    margin-left: 0%;
-    font-family: sans-serif;
+    margin: 0%;
 }
 
 .web_header
@@ -55,38 +45,42 @@ body
 
 .web_footer
 {
+    font-family: nice, sans-serif;
+    font-size: 155%;
     text-align: center;
     color: white;
 }
 
+body
+{
+    margin: 0%;
+}
+
+.background_1
+{
+    background: transparent;
+}
+
 .background_2
 {
-    background-color: rgba(0,0,0,0.75);
-    margin: 0% 5% 0% 5%;
+    background: transparent;
+    margin: 0% 15% 0% 15%;
     padding: 2.5% 0 2.5% 0%;
     height: 50%;
 }
 
 .catagory
 {
+    /* careful this isn't supported by IE TODO: IE comment here*/
     background-color: rgba(255,255,255,0.25);
+    
     margin: 0% 0% 4% 0%;
     padding: 1%;
     border-style: solid;
     border-color: white;
-   
+    
     /* Not supported by all browsers */
     border-radius: 10px;
-}
-
-.board
-{
-    border-style: solid;
-    border-color: white;
-    border-width: 5px;
-    background-color: #EEEEEE;
-    padding: 0.15% 2% 0.25% 1%;
-
 }
 
 .board_title
@@ -100,6 +94,7 @@ body
 {
     color: #FFFFFF;
     padding: 0.25%
+    font-family: nice, sans-serif;
 }
 
 .board
@@ -107,25 +102,26 @@ body
     border-style: solid;
     border-color: #FFFFFF;
     border-width: 2px;
-    background-color: #EEEEEE;
+    background-color: rgba(255,255,255,0.25);
     padding: 0.25% 1% 0.25% 1%;
+    margin-bottom: 0.5%;
 }
 
 .board_title
 {
-    background-color: #EEEEEE;
+    background-color: transparent;
     display: inline-block;
     padding: 0% 1% 0% 1%;
 }
 
 .board_header
 {
-    background-color: #EEEEEE;
+    background-color: transparent;
 }
 
 .board_subtitle
 {
-    background-color: #EEEEEE;
+    background-color: transparent;
 }
 
 .board_icon
