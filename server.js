@@ -17,7 +17,6 @@ var ports = [8080, 8443];
 // The most common non-standard file extensions are excluded, with a message.
 var types = {
     '.html' : 'text/html, application/xhtml+xml',
-    '.ttf'  : '#something needs to go here',
     '.css'  : 'text/css',
     '.js'   : 'application/javascript',
     '.png'  : 'image/png',
@@ -31,6 +30,7 @@ var types = {
     '.json' : 'application/json',
     '.pdf'  : 'application/pdf',
     '.txt'  : 'text/plain', // plain text only
+    '.ttf'  : '#to accept font files',
     '.xhtml': '#not suitable for dual delivery, use .html',
     '.htm'  : '#proprietary, non-standard, use .html',
     '.jpg'  : '#common but non-standard, use .jpeg',

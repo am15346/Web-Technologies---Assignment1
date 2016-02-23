@@ -14,47 +14,58 @@
     border-width: 1px;
 }*/
 
-.forum_body 
-{
-    margin: 2.5% 5% 2.5% 5%;
-    font-family: sans-serif;
-}
-
-.web_title
-{
-    font-family: nice, sans-serif;
-    font-size: 300%;
-    color: white;
-    margin: 0%;
-    word-spacing: 1px;
-}
-
-.web_subtitle
-{
-    font-family: nice, sans-serif;
-    font-size: 155%;
-    color: white;
-    margin: 0%;
-}
-
-.web_header
-{
-    margin: 0% 7% 0% 7%;
-    text-align: left;
-}
-
-.web_footer
-{
-    font-family: nice, sans-serif;
-    font-size: 155%;
-    text-align: center;
-    color: white;
-}
+/*                                                          */
+/* ALL ITEMS BELOW THIS LINE ARE TAGS IN ALPHABETICAL ORDER */
+/*                                                          */
 
 body
 {
     margin: 0%;
 }
+
+h1
+{
+    color: white;
+    margin: 0%;
+    padding: 0%;
+}
+
+h2 
+{
+    color: white;
+    margin: 0%;
+    padding: 0%;
+}
+
+h3 
+{
+    color: white;
+    margin: 0%;
+    padding: 0%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*                                                             */
+/* ALL ITEMS BELOW THIS LINE ARE CLASSES IN ALPHABETICAL ORDER */
+/*                                                             */
 
 .background_1
 {
@@ -69,9 +80,42 @@ body
     height: 50%;
 }
 
+.board
+{
+    border-style: solid;
+    border-color: #FFFFFF;
+    border-width: 2px;
+    background-color: rgba(255,255,255,0.25);
+    padding: 0.25% 1% 0.25% 1%;
+    margin-bottom: 0.5%;
+}
+
+.board_header
+{
+    background-color: transparent;
+}
+
+.board_icon
+{
+    width: 4%;
+    display: inline-block;
+}
+
+.board_subtitle
+{
+    background-color: transparent;
+}
+
+.board_title
+{
+    background-color: transparent;
+    display: inline-block;
+    padding: 0% 1% 0% 1%;
+}
+
 .catagory
 {
-    /* careful this isn't supported by IE TODO: IE comment here*/
+    /* careful this isn't supported by IE TODO: add IE compatable thing here*/
     background-color: rgba(255,255,255,0.25);
     
     margin: 0% 0% 4% 0%;
@@ -83,13 +127,6 @@ body
     border-radius: 10px;
 }
 
-.board_title
-{
-    background-color: #EEEEEE;
-    display: inline-block;
-    padding: 0% 1% 0% 1%;
-}
-
 .catagory_name
 {
     color: #FFFFFF;
@@ -97,54 +134,60 @@ body
     font-family: nice, sans-serif;
 }
 
-.board
+.forum_body 
 {
-    border-style: solid;
-    border-color: #FFFFFF;
-    border-width: 2px;
-    background-color: rgba(255,255,255,0.25);
-    padding: 0.25% 1% 0.25% 1%;
-    margin-bottom: 0.5%;
+    margin: 2.5% 5% 2.5% 5%;
+    font-family: sans-serif;
 }
 
-.board_title
+.web_footer
 {
-    background-color: transparent;
-    display: inline-block;
-    padding: 0% 1% 0% 1%;
+    font-family: nice, sans-serif;
+    font-size: 155%;
+    text-align: center;
+    color: white;
 }
 
-.board_header
+.web_header
 {
-    background-color: transparent;
+    margin: 0% 7% 0% 7%;
+    text-align: left;
 }
 
-.board_subtitle
+.web_subtitle
 {
-    background-color: transparent;
-}
-
-.board_icon
-{
-    width: 4%;
-    display: inline-block;
-}
-
-h1
-{
+    font-family: nice, sans-serif;
+    font-size: 155%;
     color: white;
     margin: 0%;
-    padding: 0%;
 }
 
-h2 
+.web_title
 {
+    font-family: nice, sans-serif;
+    font-size: 300%;
+    color: white;
     margin: 0%;
-    padding: 0%;
+    word-spacing: 1px;
 }
 
-h3 
-{
-    margin: 0%;
-    padding: 0%;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*                                                          */
+/* ALL ITEMS BELOW THIS LINE ARE TAGS IN ALPHABETICAL ORDER */
+/*                                                          */
