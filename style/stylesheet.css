@@ -21,6 +21,7 @@
 body
 {
     margin: 0%;
+    min-height: 100vh;
 }
 
 h1
@@ -70,6 +71,7 @@ h3
 .background_1
 {
     background: transparent;
+    min-height: 100vh;
 }
 
 .background_2
