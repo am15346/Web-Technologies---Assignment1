@@ -72,6 +72,8 @@ h3
 {
     background: transparent;
     min-height: 100vh;
+    background-image: url("../website_background/carbon_fibre.png");
+    background-attachment: fixed;
 }
 
 .background_2
