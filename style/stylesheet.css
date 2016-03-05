@@ -90,8 +90,23 @@ h3
     border-color: #FFFFFF;
     border-width: 2px;
     background-color: rgba(255,255,255,0.25);
-    padding: 0.25% 1% 0.25% 1%;
+    padding: 0%;
     margin-bottom: 0.5%;
+    height: 100%;
+    width: 100%;
+}
+
+.board *
+{
+    border-style: solid;
+    border-color: white;
+    border-width: 0px 2px 0px 0px;
+    margin: 0%;
+}
+
+.board * *
+{
+    border-width: 0px;
 }
 
 .board_header
@@ -103,6 +118,7 @@ h3
 {
     width: 4%;
     display: inline-block;
+    padding: 1%;
 }
 
 .board_subtitle
@@ -142,6 +158,24 @@ h3
 {
     margin: 2.5% 5% 2.5% 5%;
     font-family: sans-serif;
+}
+
+.last_post
+{
+    display: inline-block;
+    float: right;
+}
+
+.posts_number
+{
+    display: inline-block;
+    float: right;
+}
+
+.topic_number
+{
+    display: inline-block;
+    float: right;
 }
 
 .web_footer
