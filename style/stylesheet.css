@@ -24,6 +24,11 @@ body
     min-height: 100vh;
 }
 
+html, body
+{
+    height: 100%;
+}
+
 h1
 {
     color: white;
@@ -86,65 +91,110 @@ h3
 
 .board
 {
-    border-style: solid;
-    border-color: #FFFFFF;
-    border-width: 2px;
+    display: table-row;
+    border: 2px solid white;
     background-color: rgba(255,255,255,0.25);
-    padding: 0%;
-    margin-bottom: 0.5%;
+    margin: 5%;
     height: 100%;
     width: 100%;
 }
 
+/* Everything inside a board */
 .board *
 {
-    border-style: solid;
-    border-color: white;
-    border-width: 0px 2px 0px 0px;
-    margin: 0%;
+    display: table-cell;
+    border: 1px solid white;
+    overflow: hidden;
+    vertical-align: middle;
+    padding: 0px 5px 0px 5px;
 }
 
+/* Everything inside the children inside board divs */
 .board * *
 {
+    display: block;
     border-width: 0px;
+    padding: 0% 1% 0% %;
 }
 
-.board_header
+.board_headers
 {
+    display: table-row;
     background-color: transparent;
 }
 
-.board_icon
+.board_headers *
 {
-    width: 4%;
-    display: inline-block;
-    padding: 1%;
+    display: table-cell;
+    text-align: center;
 }
 
-.board_subtitle
+.board_headers * *
 {
-    background-color: transparent;
+    font-size: 100%;
+    color: black;
+    display: block;
 }
 
-.board_title
+/* All board_headers control the width of the columns */
+.board_headers_icon
 {
-    background-color: transparent;
-    display: inline-block;
-    padding: 0% 1% 0% 1%;
+    width: 5%;
+}
+
+.board_headers_title
+{
+    width: 50%;
+}
+
+.board_headers_last_post
+{
+    width: 25%;
+}
+
+.board_headers_topic_number
+{
+    width: 10%;
+}
+
+.board_headers_posts_number
+{
+    width: 10%;
+}
+
+.board_icon *
+{
+    margin: 5px auto;
+    height: 50px;
+}
+
+.board_icon_wrapper
+{
+    text-align: right;
 }
 
 .catagory
 {
-    /* careful this isn't supported by IE TODO: add IE compatable thing here*/
-    background-color: rgba(255,255,255,0.25);
+    display: table;
+    table-layout: auto;
+    border-spacing: 2px 10px;
     
+    width: 100%;
     margin: 0% 0% 4% 0%;
     padding: 1%;
     border-style: solid;
     border-color: white;
+    color: white;
     
     /* Not supported by all browsers */
     border-radius: 10px;
+}
+
+.catagory_boards
+{
+    /* careful this isn't supported by IE TODO: add IE compatable thing here*/
+    /* background-color: rgba(255,255,255,0.25); */
+    display: table-row-group;
 }
 
 .catagory_name
@@ -160,22 +210,14 @@ h3
     font-family: sans-serif;
 }
 
-.last_post
+.last_post p
 {
-    display: inline-block;
-    float: right;
+    margin: 0%;
 }
 
-.posts_number
+.posts_number_wrapper, .topic_number_wrapper
 {
-    display: inline-block;
-    float: right;
-}
-
-.topic_number
-{
-    display: inline-block;
-    float: right;
+    text-align: center;
 }
 
 .web_footer
@@ -221,11 +263,6 @@ h3
 
 
 
-
-
-
-
-
 /*                                                          */
-/* ALL ITEMS BELOW THIS LINE ARE TAGS IN ALPHABETICAL ORDER */
+/* ALL ITEMS BELOW THIS LINE ARE IDs IN ALPHABETICAL ORDER */
 /*                                                          */
