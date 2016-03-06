@@ -3,17 +3,51 @@
 /* All custom fonts are declared here */
 @font-face 
 {
-    font-family: nice;
-    src: url('../fonts/nice.ttf') format('truetype');
+    font-family: 'nice';
+    src: url('/fonts/nice.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/nice.woff') format('woff'),
+         url('/fonts/nice.ttf') format('truetype'),
+         url('/fonts/nice.svg#svgFontName') format('svg');
 }
 
 /*                                                          */
 /* ALL ITEMS BELOW THIS LINE ARE TAGS IN ALPHABETICAL ORDER */
 /*                                                          */
 
+a
+{
+    color: white;
+}
+
+a:active
+{
+    color: red;
+    /* Top line for IE */
+    background-color: white;
+    background-color: rgba(255,255,255,0.5);
+}
+
+a:hover
+{
+    color: orange;
+    text-decoration: underline;
+}
+
+a:link
+{
+    text-decoration: none;
+    cursor: crosshair;
+    color: white;
+}
+
+a:visted
+{
+    color: rgb(200,200,200);
+}
+
 body
 {
-    margin: 0%;
+    margin: 0;
     min-height: 100vh;
 }
 
@@ -22,26 +56,24 @@ html, body
     height: 100%;
 }
 
-h1
+h1, h2, h3
 {
-    color: white;
-    margin: 0%;
-    padding: 0%;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-h2 
-{
-    color: white;
-    margin: 0%;
-    padding: 0%;
-}
 
-h3 
-{
-    color: white;
-    margin: 0%;
-    padding: 0%;
-}
+
+
+
+
+
+
+
+
+
+
 
 /*                                                             */
 /* ALL ITEMS BELOW THIS LINE ARE CLASSES IN ALPHABETICAL ORDER */
@@ -51,72 +83,71 @@ h3
 {
     background: transparent;
     min-height: 100vh;
-    background-image: url("../website_background/carbon_fibre.png");
+    background-image: url("/website_background/carbon_fibre.png");
     background-attachment: fixed;
 }
 
 .background_2
 {
     background: transparent;
-    margin: 0% 15% 0% 15%;
-    padding: 2.5% 0 2.5% 0%;
+    margin: 0 15% 0 15%;
+    /* padding: 2.5% 0 2.5% 0; Removed due to linter */
     height: 50%;
 }
 
-.navigation_top
-{
-background-color: blue;
-
-}
-.board
+.board, .topic
 {
     display: table-row;
-    border: 2px solid white;
+    background-color: white;
     background-color: rgba(255,255,255,0.25);
-    margin: 5%;
     height: 100%;
     width: 100%;
 }
 
 /* Everything inside a board */
-.board *
+.board *, .topic *
 {
     display: table-cell;
-    border: 1px solid white;
+    border: 1px solid transparent;
     overflow: hidden;
     vertical-align: middle;
-    padding: 0px 5px 0px 5px;
+    padding: 0 5px 0 5px;
 }
 
 /* Everything inside the children inside board divs */
-.board * *
+.board * *, .topic * *
 {
     display: block;
-    border-width: 0px;
-    padding: 0% 1% 0% %;
+    border-width: 0;
+    padding: 0 1% 0 1%;
 }
 
-.board_headers
+.board_headers, .topic_headers
 {
     display: table-row;
     background-color: transparent;
 }
 
-.board_headers *
+.board_headers *, .topic_headers *
 {
     display: table-cell;
     text-align: center;
 }
 
-.board_headers * *
+.board_headers * *, .topic_headers * *
 {
     font-size: 100%;
     color: black;
     display: block;
 }
 
-/* All board_headers control the width of the columns */
+/* All board_headers and topic_headers control the width of the columns */
 .board_headers_icon
+{
+    width: 5%;
+}
+
+.topic_headers_icon
 {
     width: 5%;
 }
@@ -126,41 +157,46 @@ background-color: blue;
     width: 50%;
 }
 
-.board_headers_last_post
+.topic_headers_title
+{
+    width: 60%;
+}
+
+.board_headers_last_post, .topic_headers_last_post
 {
     width: 25%;
 }
 
-.board_headers_topic_number
+.board_headers_topic_number, .topic_headers_topic_number
 {
     width: 10%;
 }
 
-.board_headers_posts_number
+.board_headers_posts_number, .topic_headers_posts_number
 {
     width: 10%;
 }
 
-.board_icon *
+.board_icon *, .topic_icon *
 {
     margin: 5px auto;
     height: 50px;
 }
 
-.board_icon_wrapper
+.board_icon_wrapper, .topic_icon_wrapper
 {
     text-align: right;
 }
 
-.catagory
+.catagory, .topic_group
 {
     display: table;
     table-layout: auto;
-    border-spacing: 2px 10px;
+    border-spacing: 4px 10px;
     
     width: 100%;
-    margin: 0% 0% 4% 0%;
-    padding: 1%;
+    margin: 0 0 4% 0;
+    /* padding: 1%; Removed due to linter */
     border-style: solid;
     border-color: white;
     color: white;
@@ -169,7 +205,7 @@ background-color: blue;
     border-radius: 10px;
 }
 
-.catagory_boards
+.catagory_boards, .catagory_topics
 {
     /* careful this isn't supported by IE TODO: add IE compatable thing here*/
     /* background-color: rgba(255,255,255,0.25); */
@@ -179,7 +215,7 @@ background-color: blue;
 .catagory_name
 {
     color: #FFFFFF;
-    padding: 0.25%
+    padding: 0.25%;
     font-family: nice, sans-serif;
 }
 
@@ -191,250 +227,25 @@ background-color: blue;
 
 .last_post p
 {
-    margin: 0%;
-    display: inline-block;
-    float: right;
-}
-
-/*************** Board page CSS **************************/
-.pinned
-{
-    /* careful this isn't supported by IE TODO: add IE compatable thing here*/
-    background-color: rgba(36,36,36,0.6);
-    
-    margin: 0% 0% 4% 0%;
-    padding: 1%;
-    border-style: solid;
-    border-color: #006666;
-    
-    /* Not supported by all browsers */
-    border-radius: 10px;
-}
-
-/*-------------------- Board page CSS-------------------------------------- */
-.posts
-{
-    /* careful this isn't supported by IE TODO: add IE compatable thing here*/
-    background-color: rgba(36,36,36,0.6);
-    
-    margin: 0% 0% 4% 0%;
-    padding: 1%;
-    border-style: solid;
-    border-color: #006666;
-    
-    /* Not supported by all browsers */
-    border-radius: 10px;
-}
-
-.posts_number
-{
-    margin: 0%;
-}
-
-.topic
-{
-    border-style: solid;
-    border-color: #006666;
-    border-width: 2px;
-    background-color: rgba(255,255,255,0.25);
-    padding: 0%;
-    margin-bottom: 0.5%;
-    height: 100%;
-    width: 100%;
-}
-
-.topic_header
-{
-    background-color: transparent;
-}
-
-.topic_icon
-{
-    width: 4%;
-    display: inline-block;
-    padding: 1%;
-}
-
-.topic_subtitle
-{
-    background-color: transparent;
-}
-
-.topic_title
-{
-    background-color: transparent;
-    display: inline-block;
-    padding: 0% 1% 0% 1%;
-}
-
-.topic_number
-{
+    margin: 0;
     text-align: center;
 }
+
+.posts_number, .topic_number
+{
+    margin: 0;
+    text-align: center;
+}
+
+.topic_group
+{
+    background-color: gray;
+    background-color: rgba(36,36,36,0.6);
+}
+
 /*------------------------------------------------------------------------- */
-.web_footer
-{
-    font-family: nice, sans-serif;
-    font-size: 155%;
-    text-align: center;
-    color: white;
-}
-
-.web_header
-{
-    margin: 0% 7% 0% 7%;
-    text-align: left;
-}
-
-.web_subtitle
-{
-    font-family: nice, sans-serif;
-    font-size: 155%;
-    color: white;
-    margin: 0%;
-}
-
-.web_title
-{
-    font-family: nice, sans-serif;
-    font-size: 300%;
-    color: white;
-    margin: 0%;
-    word-spacing: 1px;
-}
-
-/*                                                          */
-/* ALL ITEMS BELOW THIS LINE ARE TAGS IN ALPHABETICAL ORDER */
-/*                                                          */
-
-/* Hamburger Button */
-.header {
-  background-color: rgba(36,36,36,.1);
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1); /* shadow around bax */
-  position: fixed;
-  width: 100%;
-  z-index: 3;
-}
- 
-.header ul {
-  margin: 0; /* adds space around buttons */
-  padding: 0; /* padding to left of our work button */
-  list-style: none; /* no bullet points for list */
-  overflow: hidden; /* means you can scroll when hidden by decreased window size */
-  background-color: rgba(35,35,35,.1); /* colour of buttons when hovering over them */
-}
- 
-.header li a {
-  display: block;
-  padding: 20px 20px; /* space between links in drop menu */
-  border-right: 1px solid transparent; /*colour of space between buttons */
-  text-decoration: none;
-}
- 
-.header li a:hover {
-  background-color: blue; /* colour when youhover over buttons */
-}
- 
-.header .logo {
-  display: block;
-  float: left;
-  font-size: 2em;
-  padding: 10px 20px;
-  text-decoration: none;
-}
- 
-.header .menu {
-  clear: both;
-  max-height: 0;
-  transition: max-height .2s ease-out;
-}
-
-.header .menu-icon {
-  cursor: pointer;
-  display: inline-block;
-  float: right;
-  padding: 28px 20px;
-  position: relative;
-  user-select: none;
-}
- 
-.header .menu-icon .navicon {
-  background: #333;
-  display: block;
-  height: 2px;
-  position: relative;
-  transition: background .2s ease-out;
-  width: 18px;
-}
- 
-.header .menu-icon .navicon:before,
-.header .menu-icon .navicon:after {
-  background: #333;
-  content: '';
-  display: block;
-  height: 100%;
-  position: absolute;
-  transition: all .2s ease-out;
-  width: 100%;
-}
- 
-.header .menu-icon .navicon:before {
-  top: 5px;
-}
- 
-.header .menu-icon .navicon:after {
-  top: -5px;
-}
-.header .menu-btn {
-  display: none;
-}
- 
-.header .menu-btn:checked ~ .menu {
-  max-height: 240px;
-}
- 
-.header .menu-btn:checked ~ .menu-icon .navicon {
-  background: transparent;
-}
- 
-.header .menu-btn:checked ~ .menu-icon .navicon:before {
-  transform: rotate(-45deg);
-}
- 
-.header .menu-btn:checked ~ .menu-icon .navicon:after {
-  transform: rotate(45deg);
-}
- 
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
-  top: 0;
-}
-
-
-
-
-
-
-
-
 
 
 /*                                                          */
 /* ALL ITEMS BELOW THIS LINE ARE IDs IN ALPHABETICAL ORDER */
 /*                                                          */
-@media (min-width: 48em) {
-  .header li {
-    float: left;
-  }
-  .header li a {
-    padding: 20px 30px;
-  }
-  .header .menu {
-    clear: none;
-    float: right;
-    max-height: none;
-  }
-  .header .menu-icon {
-    display: none;
-  }
-}

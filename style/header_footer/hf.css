@@ -1,7 +1,19 @@
+/* This is were all css styles are written which is linked to the HTML file */
+
+/* All custom fonts are declared here */
+@font-face 
+{
+    font-family: nice;
+    src: url('/fonts/nice.ttf') format('truetype');
+}
+
 .navigation_top
 {
-    /* careful this isn't supported by IE TODO: add IE compatable thing here*/
-    background-color: rgba(255,255,255,0.25);
+    background-color: rgba(255,255,255,0.5);
+    font-family: nice, sans-serif;
+    text-align: center;
+    padding: 1%;
+    margin-top: 2%;
 }
 
 .navigation_button
@@ -46,3 +58,164 @@
     margin: 0%;
     text-shadow: 0px -1px #333;
 }
+
+.web_footer
+{
+    background-color: rgba(255,255,255,0.5);
+    font-family: nice, sans-serif;
+    text-align: center;
+    padding: 1%;
+    margin-top: 2%;
+}
+
+.web_header
+{
+    margin: 0% 7% 0% 7%;
+    text-align: left;
+}
+
+.web_subtitle
+{
+    font-family: nice, sans-serif;
+    font-size: 155%;
+    color: white;
+    margin: 0%;
+}
+
+.web_title
+{
+    font-family: nice, sans-serif;
+    font-size: 300%;
+    color: white;
+    margin: 0%;
+    word-spacing: 1px;
+}
+
+/* Hamburger Button */
+.header {
+  background-color: rgba(36,36,36,.1);
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1); /* shadow around bax */
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+ 
+.header ul {
+  margin: 0; /* adds space around buttons */
+  padding: 0; /* padding to left of our work button */
+  list-style: none; /* no bullet points for list */
+  overflow: hidden; /* means you can scroll when hidden by decreased window size */
+  background-color: rgba(35,35,35,.1); /* colour of buttons when hovering over them */
+}
+ 
+.header li a {
+  display: block;
+  padding: 20px 20px; /* space between links in drop menu */
+  border-right: 1px solid transparent; /*colour of space between buttons */
+  text-decoration: none;
+}
+ 
+.header li a:hover {
+  background-color: blue; /* colour when youhover over buttons */
+}
+ 
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+ 
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+ 
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+ 
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+ 
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+ 
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+.header .menu-btn {
+  display: none;
+}
+ 
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+ 
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+ 
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+ 
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+ 
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
