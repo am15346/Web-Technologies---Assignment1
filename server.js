@@ -48,19 +48,19 @@ var types = {
 function start() {
     test();
     var httpService = http.createServer(serve);
-    httpService.listen(ports[0], '192.168.137.1');
+    httpService.listen(ports[0], 'localhost');
     var options = { key: key, cert: cert };
     var httpsService = https.createServer(options, serve);
-    httpsService.listen(ports[1], '192.168.137.1');
+    httpsService.listen(ports[1], 'localhost');
     printAddresses();
 }
 
 // Print out the server addresses.
 function printAddresses() {
-    var httpAddress = "http://192.168.137.1";
+    var httpAddress = "http://localhost";
     if (ports[0] != 80) httpAddress += ":" + ports[0];
     httpAddress += "/";
-    var httpsAddress = "https://192.168.137.1";
+    var httpsAddress = "https://localhost";
     if (ports[1] != 443) httpsAddress += ":" + ports[1];
     httpsAddress += "/";
     console.log('Server running at', httpAddress, 'and', httpsAddress);
