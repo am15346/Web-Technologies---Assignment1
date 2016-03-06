@@ -7,13 +7,6 @@
     src: url('../fonts/nice.ttf') format('truetype');
 }
 
-/* Used for putting a box around everything */
-/*
-{
-    border-style: solid;
-    border-width: 1px;
-}*/
-
 /*                                                          */
 /* ALL ITEMS BELOW THIS LINE ARE TAGS IN ALPHABETICAL ORDER */
 /*                                                          */
@@ -50,25 +43,6 @@ h3
     padding: 0%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*                                                             */
 /* ALL ITEMS BELOW THIS LINE ARE CLASSES IN ALPHABETICAL ORDER */
 /*                                                             */
@@ -89,6 +63,11 @@ h3
     height: 50%;
 }
 
+.navigation_top
+{
+background-color: blue;
+
+}
 .board
 {
     display: table-row;
@@ -213,13 +192,86 @@ h3
 .last_post p
 {
     margin: 0%;
+    display: inline-block;
+    float: right;
 }
 
-.posts_number_wrapper, .topic_number_wrapper
+/*************** Board page CSS **************************/
+.pinned
+{
+    /* careful this isn't supported by IE TODO: add IE compatable thing here*/
+    background-color: rgba(36,36,36,0.6);
+    
+    margin: 0% 0% 4% 0%;
+    padding: 1%;
+    border-style: solid;
+    border-color: #006666;
+    
+    /* Not supported by all browsers */
+    border-radius: 10px;
+}
+
+/*-------------------- Board page CSS-------------------------------------- */
+.posts
+{
+    /* careful this isn't supported by IE TODO: add IE compatable thing here*/
+    background-color: rgba(36,36,36,0.6);
+    
+    margin: 0% 0% 4% 0%;
+    padding: 1%;
+    border-style: solid;
+    border-color: #006666;
+    
+    /* Not supported by all browsers */
+    border-radius: 10px;
+}
+
+.posts_number
+{
+    margin: 0%;
+}
+
+.topic
+{
+    border-style: solid;
+    border-color: #006666;
+    border-width: 2px;
+    background-color: rgba(255,255,255,0.25);
+    padding: 0%;
+    margin-bottom: 0.5%;
+    height: 100%;
+    width: 100%;
+}
+
+.topic_header
+{
+    background-color: transparent;
+}
+
+.topic_icon
+{
+    width: 4%;
+    display: inline-block;
+    padding: 1%;
+}
+
+.topic_subtitle
+{
+    background-color: transparent;
+}
+
+.topic_title
+{
+    background-color: transparent;
+    display: inline-block;
+    padding: 0% 1% 0% 1%;
+}
+
+.topic_number
 {
     text-align: center;
 }
-
+/*------------------------------------------------------------------------- */
 .web_footer
 {
     font-family: nice, sans-serif;
@@ -251,8 +303,112 @@ h3
     word-spacing: 1px;
 }
 
+/*                                                          */
+/* ALL ITEMS BELOW THIS LINE ARE TAGS IN ALPHABETICAL ORDER */
+/*                                                          */
 
+/* Hamburger Button */
+.header {
+  background-color: rgba(36,36,36,.1);
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1); /* shadow around bax */
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+ 
+.header ul {
+  margin: 0; /* adds space around buttons */
+  padding: 0; /* padding to left of our work button */
+  list-style: none; /* no bullet points for list */
+  overflow: hidden; /* means you can scroll when hidden by decreased window size */
+  background-color: rgba(35,35,35,.1); /* colour of buttons when hovering over them */
+}
+ 
+.header li a {
+  display: block;
+  padding: 20px 20px; /* space between links in drop menu */
+  border-right: 1px solid transparent; /*colour of space between buttons */
+  text-decoration: none;
+}
+ 
+.header li a:hover {
+  background-color: blue; /* colour when youhover over buttons */
+}
+ 
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+ 
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
 
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+ 
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+ 
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+ 
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+ 
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+.header .menu-btn {
+  display: none;
+}
+ 
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+ 
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+ 
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+ 
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+ 
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
 
 
 
@@ -266,3 +422,19 @@ h3
 /*                                                          */
 /* ALL ITEMS BELOW THIS LINE ARE IDs IN ALPHABETICAL ORDER */
 /*                                                          */
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
