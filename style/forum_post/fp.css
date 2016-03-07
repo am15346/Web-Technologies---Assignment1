@@ -1,0 +1,87 @@
+/* GROUPED STYLING IS APPLIED HERE */
+
+/* Table cells */
+.post_headers_author, .post_headers_message, .post_author_wrapper, .post_message_wrapper
+{
+    display: table-cell;
+    border: 1px solid transparent;
+    overflow: hidden;
+    vertical-align: middle;
+    padding: 0 5px 0 5px;
+}
+
+
+/* CLASS STYLING IS IN ALPHABETICAL ORDER
+
+/* Table */
+.post
+{
+    display: table;
+    table-layout: auto;
+    border-spacing: 4px 10px;
+    
+    width: 100%;
+    margin: 0 0 4% 0;
+    /* padding: 1%; Removed due to linter */
+    border-style: solid;
+    border-color: white;
+    color: white;
+    
+    /* Not supported by all browsers */
+    border-radius: 10px;
+}
+
+.post_author_rank
+{
+    
+}
+
+/* Table row */
+.post_body
+{
+    display: table-row;
+    background-color: white;
+    background-color: rgba(255,255,255,0.25);
+}
+
+/* Table body */
+.post_container
+{
+    display: table-row-group;
+}
+
+.post_header
+{
+    font-size: 100%;
+    color: orange;
+}
+
+/* Table row */
+.post_headers
+{
+    display: table-row;
+    background-color: transparent;
+    text-align: right;
+}
+
+/* Table coloumn widths */
+.post_headers_author
+{
+    width: 15%;
+}
+
+/* Table coloumn widths */
+.post_headers_message
+{
+    width: 85%;
+}
+
+.post_name
+{
+    
+}
+
+.post_number
+{
+    font-size: 100%;
+}

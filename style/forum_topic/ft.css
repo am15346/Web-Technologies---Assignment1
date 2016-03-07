@@ -1,0 +1,139 @@
+/*                                                             */
+/* ALL ITEMS BELOW THIS LINE ARE CLASS GROUPS                  */
+/*                                                             */
+
+/* Everything inside a topic */
+.topic_icon_wrapper, .topic_title_wrapper, .topic_number_wrapper, .posts_number_wrapper, .last_post_wrapper
+{
+    display: table-cell;
+    border: 1px solid transparent;
+    overflow: hidden;
+    vertical-align: middle;
+    padding: 0 5px 0 5px;
+}
+
+/* Everything inside the children inside topic divs */
+.topic * *
+{
+    display: block;
+    border-width: 0;
+    padding: 0 1% 0 1%;
+}
+
+.topic_headers_icon, .topic_headers_title, .topic_headers_topic_number, .topic_headers_posts_number, .topic_headers_last_post
+{
+    display: table-cell;
+    text-align: center;
+}
+
+.topic_headers * *
+{
+    font-size: 100%;
+    color: black;
+    display: block;
+    margin: 0;
+}
+
+.topic_title, .topic_subtitle
+{
+    margin: 0;
+}
+
+.posts_number
+{
+    margin: 0;
+    text-align: center;
+}
+
+
+
+
+
+
+/*                                                             */
+/* ALL ITEMS BELOW THIS LINE ARE CLASSES IN ALPHABETICAL ORDER */
+/*                                                             */
+
+.topic
+{
+    display: table-row;
+    background-color: white;
+    background-color: rgba(255,255,255,0.25);
+    height: 100%;
+    width: 100%;
+}
+
+.topic_headers
+{
+    display: table-row;
+    background-color: white;
+    background-color: rgba(255,255,255,0.75);
+}
+
+/* All topic_headers and topic_headers control the width of the columns */
+.topic_headers_icon
+{
+    width: 5%;
+}
+
+.topic_headers_title
+{
+    width: 60%;
+}
+
+.topic_headers_last_post
+{
+    width: 25%;
+}
+
+.topic_headers_posts_number
+{
+    width: 10%;
+}
+
+.topic_group
+{
+    display: table;
+    table-layout: auto;
+    border-spacing: 4px 10px;
+    
+    width: 100%;
+    margin: 0 0 4% 0;
+    /* padding: 1%; Removed due to linter */
+    border-style: solid;
+    border-color: white;
+    color: white;
+    
+    /* Not supported by all browsers */
+    border-radius: 10px;
+}
+
+.catagory_topics
+{
+    display: table-row-group;
+}
+
+.catagory_name
+{
+    display: table-caption;
+    color: #FFFFFF;
+    padding: 0.25%;
+    font-family: nice, sans-serif;
+}
+
+.forum_body 
+{
+    margin: 2.5% 5% 2.5% 5%;
+    font-family: sans-serif;
+}
+
+.last_post p
+{
+    margin: 0;
+    text-align: center;
+}
+
+
+/*                                                          */
+/* ALL ITEMS BELOW THIS LINE ARE IDs IN ALPHABETICAL ORDER */
+/*                                                          */

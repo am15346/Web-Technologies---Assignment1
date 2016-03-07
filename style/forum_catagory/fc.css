@@ -1,0 +1,144 @@
+/*                                                             */
+/* ALL ITEMS BELOW THIS LINE ARE CLASS GROUPS                  */
+/*                                                             */
+
+/* Everything inside a board */
+.board_icon_wrapper, .board_title_wrapper, .topic_number_wrapper, .posts_number_wrapper, .last_post_wrapper
+{
+    display: table-cell;
+    border: 1px solid transparent;
+    overflow: hidden;
+    vertical-align: middle;
+    padding: 0 5px 0 5px;
+}
+
+/* Everything inside the children inside board divs */
+.board * *
+{
+    display: block;
+    border-width: 0;
+    padding: 0 1% 0 1%;
+}
+
+.board_headers_icon, .board_headers_title, .board_headers_topic_number, .board_headers_posts_number, .board_headers_last_post
+{
+    display: table-cell;
+    text-align: center;
+}
+
+.board_headers * *
+{
+    font-size: 100%;
+    color: black;
+    display: block;
+    margin: 0;
+}
+
+.board_title, .board_subtitle
+{
+    margin: 0;
+}
+
+.posts_number, .topic_number
+{
+    margin: 0;
+    text-align: center;
+}
+
+
+
+
+
+
+/*                                                             */
+/* ALL ITEMS BELOW THIS LINE ARE CLASSES IN ALPHABETICAL ORDER */
+/*                                                             */
+
+.board
+{
+    display: table-row;
+    background-color: white;
+    background-color: rgba(255,255,255,0.25);
+    height: 100%;
+    width: 100%;
+}
+
+.board_headers
+{
+    display: table-row;
+    background-color: white;
+    background-color: rgba(255,255,255,0.75);
+}
+
+/* All board_headers and topic_headers control the width of the columns */
+.board_headers_icon
+{
+    width: 5%;
+}
+
+.board_headers_title
+{
+    width: 50%;
+}
+
+.board_headers_last_post
+{
+    width: 25%;
+}
+
+.board_headers_topic_number
+{
+    width: 10%;
+}
+
+.board_headers_posts_number
+{
+    width: 10%;
+}
+
+.catagory
+{
+    display: table;
+    table-layout: auto;
+    border-spacing: 4px 10px;
+    
+    width: 100%;
+    margin: 0 0 4% 0;
+    /* padding: 1%; Removed due to linter */
+    border-style: solid;
+    border-color: white;
+    color: white;
+    
+    /* Not supported by all browsers */
+    border-radius: 10px;
+}
+
+.catagory_boards
+{
+    display: table-row-group;
+}
+
+.catagory_name
+{
+    display: table-caption;
+    color: #FFFFFF;
+    padding: 0.25%;
+    font-family: nice, sans-serif;
+}
+
+.forum_body 
+{
+    margin: 2.5% 5% 2.5% 5%;
+    font-family: sans-serif;
+}
+
+.last_post p
+{
+    margin: 0;
+    text-align: center;
+}
+
+
+/*                                                          */
+/* ALL ITEMS BELOW THIS LINE ARE IDs IN ALPHABETICAL ORDER */
+/*                                                          */

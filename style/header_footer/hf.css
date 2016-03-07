@@ -1,15 +1,3 @@
-/* This is were all css styles are written which is linked to the HTML file */
-
-/* All custom fonts are declared here */
-@font-face 
-{
-    font-family: 'nice';
-    src: url('/fonts/nice.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/nice.woff') format('woff'),
-         url('/fonts/nice.ttf') format('truetype'),
-         url('/fonts/nice.svg#svgFontName') format('svg');
-}
-
 .navigation_top
 {
     background-color: white;
