@@ -3,12 +3,16 @@
 /* All custom fonts are declared here */
 @font-face 
 {
-    font-family: nice;
-    src: url('/fonts/nice.ttf') format('truetype');
+    font-family: 'nice';
+    src: url('/fonts/nice.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/nice.woff') format('woff'),
+         url('/fonts/nice.ttf') format('truetype'),
+         url('/fonts/nice.svg#svgFontName') format('svg');
 }
 
 .navigation_top
 {
+    background-color: white;
     background-color: rgba(255,255,255,0.5);
     font-family: nice, sans-serif;
     text-align: center;
@@ -16,51 +20,9 @@
     margin-top: 2%;
 }
 
-.navigation_button
-{
-    /* background styles */
-    position: relative;
-    display: inline-block;
-    padding: 0.5%;
-    background: green; /*for compatibility with older browsers*/
-    background-image: linear-gradient(gray,white);
-
-    /* text styles */
-    text-decoration: none;
-    color: #000000;
-    font-size: 100%;
-    font-family: sans-serif;
-}
-
-.navigation_button:after
-{
-    /*needs content to give the div mass */
-	content: '';
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    width: calc(100% - 4px);
-    height: 50%;
-    background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.2));
-    
-    /* Not supported by all browsers */
-    border-radius: 2px;
-    box-shadow: 0px 1px 4px -2px #333;
-}
-
-.navigation_button:hover
-{
-    background: linear-gradient(black,gray);
-}
-
-.navigation_button_text
-{
-    margin: 0%;
-    text-shadow: 0px -1px #333;
-}
-
 .web_footer
 {
+    background-color: white;
     background-color: rgba(255,255,255,0.5);
     font-family: nice, sans-serif;
     text-align: center;
@@ -70,7 +32,7 @@
 
 .web_header
 {
-    margin: 0% 7% 0% 7%;
+    margin: 0 7% 0 7%;
     text-align: left;
 }
 
@@ -79,7 +41,7 @@
     font-family: nice, sans-serif;
     font-size: 155%;
     color: white;
-    margin: 0%;
+    margin: 0;
 }
 
 .web_title
@@ -87,6 +49,6 @@
     font-family: nice, sans-serif;
     font-size: 300%;
     color: white;
-    margin: 0%;
+    margin: 0;
     word-spacing: 1px;
 }
