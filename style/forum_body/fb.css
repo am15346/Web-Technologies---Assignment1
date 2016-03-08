@@ -82,3 +82,9 @@ h1, h2, h3
     /* padding: 2.5% 0 2.5% 0; Removed due to linter */
     height: 50%;
 }
+
+.forum_body 
+{
+    margin: 2.5% 5% 2.5% 5%;
+    font-family: sans-serif;
+}
