@@ -9,6 +9,7 @@
     border: 1px solid transparent;
     overflow: hidden;
     vertical-align: middle;
+    margin: 0 auto;
     padding: 0 5px 0 5px;
 }
 
@@ -74,6 +75,7 @@
 .board_headers_icon
 {
     width: 5%;
+    min-width: 50px;
 }
 
 .board_headers_title
@@ -94,6 +96,11 @@
 .board_headers_posts_number
 {
     width: 10%;
+}
+
+.board_title_wrapper
+{
+    text-overflow: ellipsis;
 }
 
 .catagory
