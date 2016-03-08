@@ -57,10 +57,10 @@ function start() {
 
 // Print out the server addresses.
 function printAddresses() {
-    var httpAddress = "192.168.137.1";
+    var httpAddress = "http://192.168.137.1";
     if (ports[0] != 80) httpAddress += ":" + ports[0];
     httpAddress += "/";
-    var httpsAddress = "192.168.137.1";
+    var httpsAddress = "http://192.168.137.1";
     if (ports[1] != 443) httpsAddress += ":" + ports[1];
     httpsAddress += "/";
     console.log('Server running at', httpAddress, 'and', httpsAddress);

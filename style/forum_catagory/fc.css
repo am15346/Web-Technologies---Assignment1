@@ -2,22 +2,41 @@
 /* ALL ITEMS BELOW THIS ARE SIZE AWARE STYLING                 */
 /*                                                             */
 
+/* When the width falls below a certain pixel value */
 @media all and (max-width: 1000px)
 {    
+    /* Hide column of table */
     .board .last_post_wrapper, .board_headers .board_headers_last_post
     {
         display: none;
     }
     
+    /* Hide column of table */
     .board .posts_number_wrapper, .board_headers .board_headers_posts_number
     {
         display: none;
     } 
     
-        .board .topic_number_wrapper, .board_headers .board_headers_topic_number
+    /* Hide column of table */
+    .board .topic_number_wrapper, .board_headers .board_headers_topic_number
     {
         display: none;
-    } 
+    }
+    
+    .background_1, .background_2
+    {
+        padding: 0;
+    }
+    
+    .forum_body
+    {
+        margin: 2.5% 1% 2.5% 1%;
+    }
+    
+    .board
+    {
+        margin: 0 auto;
+    }
 }
 
 /*                                                             */
