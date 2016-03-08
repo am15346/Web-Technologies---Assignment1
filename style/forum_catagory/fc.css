@@ -1,4 +1,26 @@
 /*                                                             */
+/* ALL ITEMS BELOW THIS ARE SIZE AWARE STYLING                 */
+/*                                                             */
+
+@media all and (max-width: 1000px)
+{    
+    .board .last_post_wrapper, .board_headers .board_headers_last_post
+    {
+        display: none;
+    }
+    
+    .board .posts_number_wrapper, .board_headers .board_headers_posts_number
+    {
+        display: none;
+    } 
+    
+        .board .topic_number_wrapper, .board_headers .board_headers_topic_number
+    {
+        display: none;
+    } 
+}
+
+/*                                                             */
 /* ALL ITEMS BELOW THIS LINE ARE CLASS GROUPS                  */
 /*                                                             */
 
@@ -11,6 +33,7 @@
     vertical-align: middle;
     margin: 0 auto;
     padding: 0 5px 0 5px;
+    position: relative;
 }
 
 /* Everything inside the children inside board divs */
@@ -37,7 +60,13 @@
 
 .board_title, .board_subtitle
 {
+    position: relative;
+    display: block;
+    width: 100%;
     margin: 0;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
 }
 
 .posts_number, .topic_number
@@ -96,6 +125,13 @@
 .board_headers_posts_number
 {
     width: 10%;
+}
+
+.board_info_wrapper
+{
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
 .board_title_wrapper
