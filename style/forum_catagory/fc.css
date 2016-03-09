@@ -23,6 +23,37 @@
     {
         display: none;
     }
+    
+    .board .board_icon_wrapper, .board .board_title_wrapper
+    {
+        height: 200px;
+    }
+    
+    .board .board_info_wrapper
+    {
+        left: 0;
+        top: 15%;
+    }
+    
+    .board .board_title
+    {
+        font-size: 400%;
+    }
+    
+    .board .board_subtitle
+    {
+        font-size: 300%;
+    }
+
+    .board_headers .board_headers_icon
+    {
+        width: 15%;
+    }
+
+    .board_headers. board_headers_title
+    {
+        width: 85%;
+    }
 }
 
 /*                                                             */
