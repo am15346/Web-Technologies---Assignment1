@@ -40,8 +40,11 @@ function randomise_posts()
     var post_numbers = document.querySelectorAll(".posts_number p");
     for(var i = 0; i < topic_numbers.length; i++)
     {
-        randomise_num(post_numbers[i], 1000, 100);
         randomise_num(topic_numbers[i], 100, 1);
+    }
+    for(var i = 0; i < post_numbers.length; i++)
+    {
+        randomise_num(post_numbers[i], 1000, 100);
     }
 }
 

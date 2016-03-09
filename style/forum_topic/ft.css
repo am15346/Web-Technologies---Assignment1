@@ -1,3 +1,26 @@
+/* When the width falls below a certain pixel value */
+@media all and (max-width: 1000px)
+{ 
+    /* BOARD PAGE */
+    /* Hide column of table */
+    .topic .last_post_wrapper, .topic_headers .topic_headers_last_post
+    {
+        display: none;
+    }
+    
+    /* Hide column of table */
+    .topic .posts_number_wrapper, .topic_headers .topic_headers_posts_number
+    {
+        display: none;
+    } 
+    
+    /* Hide column of table */
+    .topic .topic_number_wrapper, .topic_headers .topic_headers_topic_number
+    {
+        display: none;
+    }    
+}
+
 /*                                                             */
 /* ALL ITEMS BELOW THIS LINE ARE CLASS GROUPS                  */
 /*                                                             */

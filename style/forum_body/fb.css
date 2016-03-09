@@ -82,3 +82,28 @@ h1, h2, h3
     margin: 2.5% 5% 2.5% 5%;
     font-family: sans-serif;
 }
+
+
+
+
+
+
+
+
+
+/*                                                                  */
+/* ALL CHANGES TO HTML ITEMS DUE TO SCREEN SIZE ARE BELOW THIS LINE */
+/*                                                                  */
+
+@media all and (max-width: 1000px)
+{ 
+    .background_1, .background_2
+    {
+        padding: 0;
+    }
+    
+    .forum_body
+    {
+        margin: 2.5% 1% 2.5% 1%;
+    }
+}

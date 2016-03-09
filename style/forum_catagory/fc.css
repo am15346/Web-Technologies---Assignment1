@@ -5,6 +5,7 @@
 /* When the width falls below a certain pixel value */
 @media all and (max-width: 1000px)
 {    
+    /* FRONT PAGE */
     /* Hide column of table */
     .board .last_post_wrapper, .board_headers .board_headers_last_post
     {
@@ -21,21 +22,6 @@
     .board .topic_number_wrapper, .board_headers .board_headers_topic_number
     {
         display: none;
-    }
-    
-    .background_1, .background_2
-    {
-        padding: 0;
-    }
-    
-    .forum_body
-    {
-        margin: 2.5% 1% 2.5% 1%;
-    }
-    
-    .board
-    {
-        margin: 0 auto;
     }
 }
 
