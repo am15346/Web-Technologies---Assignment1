@@ -19,7 +19,7 @@
         <link href="/style/forum_body/fb.css" rel="stylesheet" type="text/css" />
         <link href="/style/forum_post/fp.css" rel="stylesheet" type="text/css" />
         <link href="/style/header_footer/hf.css" rel="stylesheet" type="text/css" />
-        <link href="/style/hamburger_menu/hamburger_menu.css" rel="stylesheet" type="text/css" />
+        <link href="/style/top_nav_bar/top_nav_bar.css" rel="stylesheet" type="text/css"/>
         
         <script src="/scripts/misc/javacode.js" type="text/javascript"></script>
         
@@ -34,12 +34,21 @@
             <div class="background_2">
             
                 <div class="web_header">
+                    <img class="logo" src="/board_icons/logo.png" alt="logo"/>
                     <p class="web_title">ForumForum</p>
                     <p class="web_subtitle">The Forum about Forums</p>
                 </div>
                 
                 <div class="navigation_top">
-                    <p>This is the header</p>
+                    <ul class="topnav"> <!-- Start of navigation bar -->
+                        <li><button class="homebtn">Home</button></li>
+                        <li><button class="navbtns">News</button></li>
+                        <li><button class="navbtns">Contact</button></li>
+                        <li><button class="navbtns">About</button></li>
+                        <form>
+                            <input type="text" class="search" placeholder="Search..."/>
+                        </form>
+                    </ul> <!-- End of navigation bar -->
                 </div>
                 
                 <div class="forum_body">

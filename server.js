@@ -11,7 +11,7 @@ var path = require('path');
 
 // The default port numbers are the standard ones [80,443] for convenience.
 // Change them to e.g. [8080,8443] to avoid privilege or clash problems.
-var ports = [8080, 8443];
+var ports = [8657, 7526];
 
 // The most common standard file extensions are supported.
 // The most common non-standard file extensions are excluded, with a message.
@@ -48,19 +48,19 @@ var types = {
 function start() {
     test();
     var httpService = http.createServer(serve);
-    httpService.listen(ports[0], '192.168.137.1');
+    httpService.listen(ports[0], '192.168.56.1');
     var options = { key: key, cert: cert };
     var httpsService = https.createServer(options, serve);
-    httpsService.listen(ports[1], '192.168.137.1');
+    httpsService.listen(ports[1], '192.168.56.1');
     printAddresses();
 }
 
 // Print out the server addresses.
 function printAddresses() {
-    var httpAddress = "http://192.168.137.1";
+    var httpAddress = "http://192.168.56.1";
     if (ports[0] != 80) httpAddress += ":" + ports[0];
     httpAddress += "/";
-    var httpsAddress = "http://192.168.137.1";
+    var httpsAddress = "https://192.168.56.1";
     if (ports[1] != 443) httpsAddress += ":" + ports[1];
     httpsAddress += "/";
     console.log('Server running at', httpAddress, 'and', httpsAddress);
