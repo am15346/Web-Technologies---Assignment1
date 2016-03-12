@@ -1,8 +1,46 @@
+.homebtn
+{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    font-family: nice, sans-serif;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    padding: 14px 16px;
+}
+
+.homebtn:hover
+{
+    background-color: #95d097;
+}
+
+input.search[type=text] 
+{
+    width: 100%;
+    padding: 8px 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    background-color: white;
+    background-image: url('/board_icons/search.svg');
+    background-position: 10px; 
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    color: white;
+}
+
+input.search[type=text]:focus 
+{
+    background-color: #363636;
+}
+
 .logo /* styling for ForumForum Logo */
 {
     float:left;
-    width:50px; 
-    height:50px;
+    width:70px; 
+    height:70px;
+    margin-right: 5px;
 }
 
 .navigation_top
@@ -12,14 +50,53 @@
     font-family: nice, sans-serif;
     text-align: center;
     padding: 1%;
-    margin-top: 2%;
+    margin: 2% 0 5% 0;
+}
+
+.navbtns
+{
+    background-color: #333333;
+    border: none;
+    color: white;
+    font-family: nice, sans-serif;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    padding: 14px 16px;
+}
+
+.navbtns:hover
+{
+    background-color: #737373;
+}
+
+.navigation_buttons
+{
+    display: inline-block;
+    float: left;
+}
+
+.navigation_buttons *
+{
+    float: left;
+}
+
+.navigation_search
+{
+    display: inline-block;
+    float: right;
+}
+
+.search
+{
+    width: 100%;
 }
 
 .web_footer
 {
     background-color: white;
     background-color: rgba(255,255,255,0.5);
-    font-family: nice, sans-serif;
+    font-family: sans-serif;
     text-align: center;
     padding: 1%;
     margin-top: 2%;

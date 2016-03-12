@@ -73,6 +73,7 @@ h1, h2, h3
 
 .background_2
 {
+    position: relative;
     background: transparent;
     padding: 2.5% 0 2.5% 0;
 }
