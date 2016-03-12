@@ -8,6 +8,7 @@
     display: inline-block;
     font-size: 16px;
     padding: 14px 16px;
+    transition: background 0.3s linear 0s, color 0.3s linear 0s;
 }
 
 .homebtn:hover
@@ -63,6 +64,7 @@ input.search[type=text]:focus
     display: inline-block;
     font-size: 16px;
     padding: 14px 16px;
+    transition: background 0.3s linear 0s, color 0.3s linear 0s;
 }
 
 .navbtns:hover
@@ -94,8 +96,8 @@ input.search[type=text]:focus
 
 .web_footer
 {
-    background-color: white;
-    background-color: rgba(255,255,255,0.5);
+    background-color: #333333;
+    color: white;
     font-family: sans-serif;
     text-align: center;
     padding: 1%;
