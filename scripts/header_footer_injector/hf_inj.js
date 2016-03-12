@@ -5,8 +5,8 @@ addEventListener('load', main);
 
 function main()
 {
-    inject("header", "/structure/header/header.html");
-    inject("footer", "/structure/header/footer.html")
+    inject("header", "./../../structure/header/header.html");
+    inject("footer", "./../../structure/header/footer.html")
 }
 
 function inject(find, location)

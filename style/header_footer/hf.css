@@ -18,17 +18,14 @@
 
 input.search[type=text] 
 {
-    width: 100%;
-    padding: 8px 20px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin: 5px;
     border-radius: 4px;
     background-color: white;
-    background-image: url('/board_icons/search.svg');
-    background-position: 10px; 
+    background-image: url('./../../board_icons/search.svg');
+    background-position: 100%; 
     background-repeat: no-repeat;
-    padding-left: 40px;
     color: white;
+    padding: 5px 0 5px 0;
 }
 
 input.search[type=text]:focus 

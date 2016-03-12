@@ -17,11 +17,11 @@ function randomise_icons()
     var top = document.querySelectorAll(".topic_icon_wrapper");
     for(var i = 0; i < bor.length; i++)
     {
-        bor[i].innerHTML = "<object class='board_icon' type='image/svg+xml' data='/board_icons/carnival_fill_(" + ran_num(40,1) + ").svg'>Your browser does not support SVG</object>";
+        bor[i].innerHTML = "<object class='board_icon' type='image/svg+xml' data='./../../board_icons/carnival_fill_(" + ran_num(40,1) + ").svg'>Your browser does not support SVG</object>";
     }
     for(var i = 0; i < top.length; i++)
     {
-        top[i].innerHTML = "<object class='topic_icon' type='image/svg+xml' data='/topic_icons/carnival_fill_(" + ran_num(40,1) + ").svg'>Your browser does not support SVG</object>";
+        top[i].innerHTML = "<object class='topic_icon' type='image/svg+xml' data='./../../topic_icons/carnival_fill_(" + ran_num(40,1) + ").svg'>Your browser does not support SVG</object>";
     }
 }
 
