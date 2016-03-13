@@ -1,3 +1,13 @@
+/* POLYFILLS */
+
+header, footer
+{
+    display: block;
+}
+
+
+/* ALL CLASSES BELOW THIS LINE ARE IN ALPHABETICAL ORDER */
+
 .homebtn
 {
     background-color: #4CAF50; /* Green */

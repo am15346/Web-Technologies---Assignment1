@@ -5,10 +5,17 @@ addEventListener('load', main);
 
 function main()
 {
+    polyfill();
     randomise_last();
     randomise_posts();
     randomise_date();
     randomise_icons();
+}
+
+function polyfill()
+{
+    document.createElement('header');
+    document.createElement('footer');
 }
 
 function randomise_icons()
